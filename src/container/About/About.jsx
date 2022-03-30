@@ -21,7 +21,7 @@ const About = () => {
         means
         <span>Good Business</span>
       </h2>
-      <div className="app_profiles">
+      <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
@@ -32,7 +32,7 @@ const About = () => {
           >
             <img src={about.imgURL} alt={about.title} />
             <h2 className='bold-text' style={{ marginTop: 20 }}>{about.title}</h2>
-            <p className="bold" style={{ marginTop: 10 }}>{ about.description}</p>
+            <p className="p-text" style={{ marginTop: 10 }}>{ about.description}</p>
           </motion.div>
         ))}
         
